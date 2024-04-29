@@ -11,17 +11,19 @@
       body{
         margin:0;
         border:0;
-        background: yellow;
+        background: black;
+        overflow-x: hidden;
       }
       nav{
         padding: 100px;
-        background: black;
+        background: aquamarine;
         color:whitesmoke;
       }
       h1{
         font-family: "Jacquard 24", system-ui;
         font-weight: 400;
         font-style: normal;
+        color: black;
       }
       a{
         text-decoration: none;
@@ -35,38 +37,68 @@
 <body>
       <nav>
         <h1 style="text-align: center;font-size: 45px;">Jack&Mary</h1>
-        <a class="btn btn-outline-warning" style="margin-left: 40px;" href="#">Felpe</a>
-        <a class="btn btn-outline-warning" style="margin-left: 30px;" href="#">Cover</a>
-        <a class="btn btn-outline-warning" style="margin-left: 30px;" href="#">Maglie</a>
+        <a class="btn btn-outline-danger" onclick="felpa()" style="margin-left: 20px;" href="#">Felpe</a>
+        <a class="btn btn-outline-danger" style="margin-left: 20px;" href="#">Cover</a>
+        <a class="btn btn-outline-danger" style="margin-left: 20px;" href="#">Maglie</a>
       </nav>
       <div class="container my-5">
         <div class="row">
           <div class="col">
-            <div class="card" style="width: 18rem; background: red;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
+            <div class="card" style="width: 18rem;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
               <img src="maglia_blu.jpeg" class="card-img-top" width="290px">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-outline-success">Go somewhere</a>
               </div>
             </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 18rem; background: red;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
+            <div class="card" style="width: 18rem;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
               <img src="maglia_1.png" class="card-img-top" width="290px">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-outline-success">Go somewhere</a>
               </div>
           </div>
           <div class="col">
-            <div class="card" style="width: 18rem; background: red;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
+            <div class="card" style="width: 18rem;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
               <img src="maglia_2.jpg" class="card-img-top" width="290px">
               <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <a href="#" class="btn btn-outline-success">Go somewhere</a>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="width: 18rem;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
+              <img src="cover-iphone.jpg" class="card-img-top" width="290px">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-success">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" id="felpablu" style="width: 18rem;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
+              <img src="cover-iphwhite.jpg" class="card-img-top" width="290px">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-success">Go somewhere</a>
+              </div>
+          </div>
+          <div class="col">
+            <div class="card" style="width: 18rem;text-align: center;margin-left: 100px;border-radius: 24px;margin-top: 20px;">
+              <img src="cover-samsung.jpg" class="card-img-top" width="290px">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-outline-success">Go somewhere</a>
               </div>
           </div>
         </div>
@@ -74,9 +106,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/cesiumjs/1.78/Build/Cesium/Cesium.js"></script>
     <script src="bootstrap.min.js"></script>
     <script>
-      function sfondo() {
-        document.getElementById('sfondo').style.background = "black";
-        document.getElementById('sfondo').style.color = "white";
+      function felpa() {
+          document.getElementById('felpablu')
       }
     </script>
 </body>
